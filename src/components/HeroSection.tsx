@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { BookOpen, ArrowDown, Sparkles, Gift, Star } from "lucide-react";
+import { ArrowDown, Sparkles, Gift, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import orbitLogo from "@/assets/orbit-library-logo.jpeg";
 
 const HeroSection = () => {
   return (
@@ -138,8 +139,8 @@ const HeroSection = () => {
               />
 
               {/* Main Logo */}
-              <div className="w-48 h-48 md:w-80 md:h-80 rounded-full bg-gradient-primary flex items-center justify-center shadow-elegant relative">
-                <BookOpen className="w-24 h-24 md:w-40 md:h-40 text-white" />
+              <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden shadow-elegant relative flex items-center justify-center bg-white">
+                <img src={orbitLogo} alt="Orbit Library Logo" className="w-full h-full object-cover" />
 
                 {/* Floating elements */}
                 <motion.div
