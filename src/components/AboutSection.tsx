@@ -36,20 +36,20 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="relative order-2 lg:order-1"
           >
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 md:gap-4">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="space-y-4"
+                className="space-y-3 md:space-y-4"
               >
-                <div className="bg-card rounded-2xl p-6 shadow-elegant border">
-                  <div className="text-4xl font-bold text-gradient">5+</div>
-                  <div className="text-muted-foreground">Years of Service</div>
+                <div className="bg-card rounded-2xl p-4 md:p-6 shadow-elegant border">
+                  <div className="text-2xl md:text-4xl font-bold text-gradient">New!</div>
+                  <div className="text-muted-foreground text-xs md:text-base">Just Opened</div>
                 </div>
-                <div className="bg-gradient-primary rounded-2xl p-6 text-white">
-                  <div className="text-4xl font-bold">500+</div>
-                  <div className="text-white/80">Happy Students</div>
+                <div className="bg-gradient-primary rounded-2xl p-4 md:p-6 text-white">
+                  <div className="text-2xl md:text-4xl font-bold">50+</div>
+                  <div className="text-white/80 text-xs md:text-base">Seats Available</div>
                 </div>
               </motion.div>
               <motion.div
@@ -57,15 +57,15 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="space-y-4 pt-8"
+                className="space-y-3 md:space-y-4 pt-4 md:pt-8"
               >
-                <div className="bg-card rounded-2xl p-6 shadow-elegant border">
-                  <div className="text-4xl font-bold text-gradient">95%</div>
-                  <div className="text-muted-foreground">Success Rate</div>
+                <div className="bg-card rounded-2xl p-4 md:p-6 shadow-elegant border">
+                  <div className="text-2xl md:text-4xl font-bold text-gradient">50%</div>
+                  <div className="text-muted-foreground text-xs md:text-base">Launch Discount</div>
                 </div>
-                <div className="bg-accent rounded-2xl p-6 text-accent-foreground">
-                  <div className="text-4xl font-bold">24/7</div>
-                  <div className="text-accent-foreground/80">Support</div>
+                <div className="bg-accent rounded-2xl p-4 md:p-6 text-accent-foreground">
+                  <div className="text-2xl md:text-4xl font-bold">17hrs</div>
+                  <div className="text-accent-foreground/80 text-xs md:text-base">Daily Open</div>
                 </div>
               </motion.div>
             </div>
@@ -81,11 +81,11 @@ const AboutSection = () => {
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               About Us
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold mt-2 mb-4">
               Your Success is <span className="text-gradient">Our Priority</span>
             </h2>
-            <p className="text-muted-foreground mb-8">
-              Orbital Library was founded with a simple mission – to create the perfect
+            <p className="text-muted-foreground mb-6 md:mb-8 text-sm md:text-base">
+              Orbit Library was founded with a simple mission – to create the perfect
               study sanctuary for students. We believe that the right environment can
               transform how you learn and achieve your goals.
             </p>
