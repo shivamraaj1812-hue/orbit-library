@@ -125,48 +125,53 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative flex justify-center order-1 lg:order-2"
           >
-            <div className="relative">
-              {/* Animated rings */}
+            <div className="relative w-56 h-56 md:w-80 md:h-80">
+              {/* Animated rings - positioned around the container */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-0 -m-4 md:-m-8 border-2 border-dashed border-primary/20 rounded-full"
+                className="absolute -inset-4 md:-inset-8 border-2 border-dashed border-primary/30 rounded-full"
               />
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-0 -m-8 md:-m-16 border-2 border-dashed border-accent/20 rounded-full"
+                className="absolute -inset-8 md:-inset-16 border-2 border-dashed border-accent/30 rounded-full"
+              />
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+                className="absolute -inset-12 md:-inset-24 border border-dashed border-primary/15 rounded-full"
               />
 
-              {/* Main Logo */}
-              <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden shadow-elegant relative flex items-center justify-center bg-white">
-                <img src={orbitLogo} alt="Orbit Library Logo" className="w-full h-full object-cover" />
-
-                {/* Floating elements */}
-                <motion.div
-                  animate={{ y: [-10, 10, -10] }}
-                  transition={{ duration: 3, repeat: Infinity }}
-                  className="absolute -top-2 -right-2 md:-top-4 md:-right-4 w-12 h-12 md:w-16 md:h-16 bg-accent rounded-2xl flex items-center justify-center shadow-lg"
-                >
-                  <span className="text-xl md:text-2xl">📚</span>
-                </motion.div>
-                <motion.div
-                  animate={{ y: [10, -10, 10] }}
-                  transition={{ duration: 4, repeat: Infinity }}
-                  className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 w-10 h-10 md:w-14 md:h-14 bg-card rounded-2xl flex items-center justify-center shadow-lg border"
-                >
-                  <span className="text-lg md:text-xl">✨</span>
-                </motion.div>
-                
-                {/* NEW badge */}
-                <motion.div
-                  animate={{ scale: [1, 1.1, 1] }}
-                  transition={{ duration: 2, repeat: Infinity }}
-                  className="absolute -top-4 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full"
-                >
-                  NEW!
-                </motion.div>
+              {/* Main Logo Container */}
+              <div className="w-full h-full rounded-full overflow-hidden shadow-elegant bg-white p-2">
+                <img src={orbitLogo} alt="Orbit Library Logo" className="w-full h-full object-contain" />
               </div>
+
+              {/* Floating elements - positioned outside the logo */}
+              <motion.div
+                animate={{ y: [-10, 10, -10] }}
+                transition={{ duration: 3, repeat: Infinity }}
+                className="absolute -top-2 -right-2 md:-top-4 md:-right-4 w-12 h-12 md:w-16 md:h-16 bg-accent rounded-2xl flex items-center justify-center shadow-lg"
+              >
+                <span className="text-xl md:text-2xl">📚</span>
+              </motion.div>
+              <motion.div
+                animate={{ y: [10, -10, 10] }}
+                transition={{ duration: 4, repeat: Infinity }}
+                className="absolute -bottom-2 -left-2 md:-bottom-4 md:-left-4 w-10 h-10 md:w-14 md:h-14 bg-card rounded-2xl flex items-center justify-center shadow-lg border"
+              >
+                <span className="text-lg md:text-xl">✨</span>
+              </motion.div>
+              
+              {/* NEW badge */}
+              <motion.div
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{ duration: 2, repeat: Infinity }}
+                className="absolute -top-6 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-3 py-1 rounded-full"
+              >
+                NEW!
+              </motion.div>
             </div>
           </motion.div>
         </div>
