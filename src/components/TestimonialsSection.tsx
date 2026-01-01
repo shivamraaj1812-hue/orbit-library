@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Priya Sharma",
     role: "UPSC Aspirant",
-    content: "Orbital Library has been my second home during my preparation. The peaceful environment and extended hours helped me study without any distractions.",
+    content: "Orbit Library has been my second home during my preparation. The peaceful environment and extended hours helped me study without any distractions.",
     rating: 5,
     avatar: "PS",
   },
@@ -26,21 +26,21 @@ const testimonials = [
   {
     name: "Vikram Singh",
     role: "CA Student",
-    content: "I cleared my CA exams thanks to the focused environment here. The library has everything a serious student needs.",
+    content: "The focused environment here is exactly what I need for my CA preparation. Highly recommend Orbit Library!",
     rating: 5,
     avatar: "VS",
   },
   {
     name: "Sneha Gupta",
     role: "Law Student",
-    content: "The vast collection of law books and journals is impressive. It's the best library for any student in the city.",
+    content: "Clean, quiet, and well-maintained. It's the best library for any student in the city.",
     rating: 5,
     avatar: "SG",
   },
   {
     name: "Amit Kumar",
     role: "MBA Aspirant",
-    content: "Great ambiance, friendly staff, and all the resources you need. Highly recommend Orbital Library for serious preparation.",
+    content: "Great ambiance, friendly staff, and all the resources you need. Highly recommend Orbit Library for serious preparation.",
     rating: 5,
     avatar: "AK",
   },
@@ -48,23 +48,23 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="py-24">
+    <section id="testimonials" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
+          <span className="text-primary font-semibold text-xs md:text-sm uppercase tracking-wider">
             Testimonials
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold mt-2 mb-4">
             What Our <span className="text-gradient">Students Say</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
             Don't just take our word for it. Here's what our students have to say
-            about their experience at Orbital Library.
+            about their experience at Orbit Library.
           </p>
         </motion.div>
 

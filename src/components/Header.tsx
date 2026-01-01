@@ -41,18 +41,18 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-14 md:h-20">
           {/* Logo */}
           <motion.a
             href="#"
             className="flex items-center gap-2"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-              <BookOpen className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
+              <BookOpen className="w-4 h-4 md:w-5 md:h-5 text-white" />
             </div>
-            <span className="text-xl md:text-2xl font-bold text-gradient">
-              Orbital Library
+            <span className="text-lg md:text-2xl font-bold text-gradient">
+              Orbit Library
             </span>
           </motion.a>
 
@@ -87,7 +87,7 @@ const Header = () => {
             </Button>
 
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919334437074"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:block"
@@ -132,7 +132,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919334437074"
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-3"

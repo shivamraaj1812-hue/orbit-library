@@ -10,22 +10,23 @@ const timings = [
 
 const TimingSection = () => {
   return (
-    <section id="timing" className="py-24">
+    <section id="timing" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            className="text-center lg:text-left"
           >
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">
+            <span className="text-primary font-semibold text-xs md:text-sm uppercase tracking-wider">
               Library Hours
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold mt-2 mb-4">
               Open When You <span className="text-gradient">Need Us</span>
             </h2>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-muted-foreground mb-6 md:mb-8 text-sm md:text-base">
               We understand that every student has a unique schedule. That's why
               we offer extended hours to accommodate early birds and night owls alike.
             </p>

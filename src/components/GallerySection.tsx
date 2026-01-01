@@ -36,23 +36,23 @@ const galleryImages = [
 
 const GallerySection = () => {
   return (
-    <section id="gallery" className="py-24 bg-muted/30">
+    <section id="gallery" className="py-16 md:py-24 bg-muted/30">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">
+          <span className="text-primary font-semibold text-xs md:text-sm uppercase tracking-wider">
             Gallery
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-4">
+          <h2 className="text-2xl md:text-4xl font-bold mt-2 mb-4">
             Take a <span className="text-gradient">Virtual Tour</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-base">
             Explore our modern facilities and see why students love studying at
-            Orbital Library.
+            Orbit Library.
           </p>
         </motion.div>
 
