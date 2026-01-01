@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Moon, Sun, BookOpen } from "lucide-react";
+import { Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import orbitLogo from "@/assets/orbit-library-logo.jpeg";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,8 +49,8 @@ const Header = () => {
             className="flex items-center gap-2"
             whileHover={{ scale: 1.02 }}
           >
-            <div className="w-8 h-8 md:w-10 md:h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-              <BookOpen className="w-4 h-4 md:w-5 md:h-5 text-white" />
+            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden bg-white shadow-sm">
+              <img src={orbitLogo} alt="Orbit Library" className="w-full h-full object-contain" />
             </div>
             <span className="text-lg md:text-2xl font-bold text-gradient">
               Orbit Library
