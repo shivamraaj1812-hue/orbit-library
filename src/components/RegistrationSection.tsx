@@ -170,7 +170,7 @@ const RegistrationSection = () => {
                   </p>
                   <div className="space-y-3">
                     <a
-                      href="https://wa.me/919334437074"
+                      href="https://wa.me/917004656429"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block"

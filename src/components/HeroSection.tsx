@@ -89,7 +89,7 @@ const HeroSection = () => {
                   className="w-full sm:w-auto rounded-full px-8 h-12 md:h-14 text-base md:text-lg"
                   asChild
                 >
-                  <a href="https://wa.me/919334437074" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/917004656429" target="_blank" rel="noopener noreferrer">
                     📱 WhatsApp Us
                   </a>
                 </Button>
