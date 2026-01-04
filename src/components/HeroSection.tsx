@@ -22,7 +22,7 @@ const HeroSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-bold animate-pulse">
             <Gift className="w-4 h-4" />
-            🎉 GRAND OPENING - Limited Time Offers!
+            🎉 GRAND OPENING - Up to 20% OFF + FREE Registration!
           </div>
         </motion.div>
 
@@ -67,8 +67,8 @@ const HeroSection = () => {
                 <span className="font-bold">Opening Special Offer!</span>
               </div>
               <p className="text-sm text-white/90">
-                Register now and get <span className="font-bold">50% OFF</span> on your first month + 
-                <span className="font-bold"> FREE WiFi access</span> for lifetime!
+                Get <span className="font-bold">up to 20% OFF</span> on all shifts + 
+                <span className="font-bold"> FREE Registration</span>!
               </p>
             </motion.div>
 
@@ -79,7 +79,7 @@ const HeroSection = () => {
                   className="w-full sm:w-auto bg-gradient-primary text-white rounded-full px-8 h-12 md:h-14 text-base md:text-lg shadow-elegant"
                   asChild
                 >
-                  <a href="#register">Register Now - 50% OFF</a>
+                  <a href="#register">Register Now - FREE!</a>
                 </Button>
               </motion.div>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
@@ -105,7 +105,7 @@ const HeroSection = () => {
             >
               {[
                 { value: "50+", label: "Seats" },
-                { value: "17hrs", label: "Daily" },
+                { value: "24hrs", label: "Daily" },
                 { value: "100%", label: "AC & WiFi" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
