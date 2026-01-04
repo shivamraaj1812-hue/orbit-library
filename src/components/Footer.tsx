@@ -22,7 +22,7 @@ const Footer = () => {
               <span className="text-lg md:text-xl font-bold text-gradient">Orbit Library</span>
             </div>
             <p className="text-muted-foreground text-sm md:text-base mb-6">
-              Your gateway to academic excellence. Join our community of dedicated
+              Where focus revolves. Join our community of dedicated
               students today.
             </p>
             <a

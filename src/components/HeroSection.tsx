@@ -41,7 +41,7 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 bg-primary/10 text-primary px-3 md:px-4 py-2 rounded-full text-xs md:text-sm font-medium mb-4 md:mb-6"
             >
               <Sparkles className="w-4 h-4" />
-              Your Gateway to Academic Excellence
+              Where Focus Revolves
             </motion.div>
 
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 md:mb-6">
