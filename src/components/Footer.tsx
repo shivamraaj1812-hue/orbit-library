@@ -108,27 +108,27 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <h4 className="font-semibold mb-4 text-sm md:text-base">Library Hours</h4>
+            <h4 className="font-semibold mb-4 text-sm md:text-base">Study Shifts</h4>
             <ul className="space-y-2 md:space-y-3">
               <li className="flex items-center gap-2 md:gap-3">
                 <Clock className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 <div>
-                  <div className="text-xs md:text-sm font-medium">Mon - Fri</div>
-                  <div className="text-muted-foreground text-xs md:text-sm">6:00 AM - 11:00 PM</div>
+                  <div className="text-xs md:text-sm font-medium">Shift 1</div>
+                  <div className="text-muted-foreground text-xs md:text-sm">6 AM - 10 AM</div>
                 </div>
               </li>
               <li className="flex items-center gap-2 md:gap-3">
                 <Clock className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 <div>
-                  <div className="text-xs md:text-sm font-medium">Saturday</div>
-                  <div className="text-muted-foreground text-xs md:text-sm">7:00 AM - 10:00 PM</div>
+                  <div className="text-xs md:text-sm font-medium">Shift 2 / Shift 3</div>
+                  <div className="text-muted-foreground text-xs md:text-sm">10 AM - 9 PM</div>
                 </div>
               </li>
               <li className="flex items-center gap-2 md:gap-3">
                 <Clock className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 <div>
-                  <div className="text-xs md:text-sm font-medium">Sunday</div>
-                  <div className="text-muted-foreground text-xs md:text-sm">8:00 AM - 9:00 PM</div>
+                  <div className="text-xs md:text-sm font-medium">Night Shift</div>
+                  <div className="text-muted-foreground text-xs md:text-sm">9 PM - 5 AM</div>
                 </div>
               </li>
             </ul>
