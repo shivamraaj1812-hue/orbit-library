@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 import { Clock, Calendar, Sun, Moon } from "lucide-react";
 
 const timings = [
-  { day: "Monday - Friday", hours: "6:00 AM - 11:00 PM", isWeekday: true },
-  { day: "Saturday", hours: "7:00 AM - 10:00 PM", isWeekday: false },
-  { day: "Sunday", hours: "8:00 AM - 9:00 PM", isWeekday: false },
-  { day: "Holidays", hours: "9:00 AM - 6:00 PM", isWeekday: false },
+  { day: "Shift 1", hours: "6:00 AM - 10:00 AM", isWeekday: true },
+  { day: "Shift 2", hours: "10:00 AM - 3:00 PM", isWeekday: true },
+  { day: "Shift 3", hours: "3:00 PM - 9:00 PM", isWeekday: true },
+  { day: "Night Shift", hours: "9:00 PM - 5:00 AM", isWeekday: false },
+  { day: "Full Day", hours: "15+ Hours", isWeekday: false },
 ];
 
 const TimingSection = () => {
@@ -81,13 +82,13 @@ const TimingSection = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/10 backdrop-blur rounded-xl p-4">
                     <Sun className="w-6 h-6 mb-2" />
-                    <div className="text-sm text-white/70">Early Opening</div>
-                    <div className="text-xl font-bold">6:00 AM</div>
+                    <div className="text-sm text-white/70">Day Shifts</div>
+                    <div className="text-xl font-bold">6 AM - 9 PM</div>
                   </div>
                   <div className="bg-white/10 backdrop-blur rounded-xl p-4">
                     <Moon className="w-6 h-6 mb-2" />
-                    <div className="text-sm text-white/70">Late Closing</div>
-                    <div className="text-xl font-bold">11:00 PM</div>
+                    <div className="text-sm text-white/70">Night Shift</div>
+                    <div className="text-xl font-bold">9 PM - 5 AM</div>
                   </div>
                 </div>
               </div>
