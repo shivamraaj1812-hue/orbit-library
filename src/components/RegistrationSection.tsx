@@ -66,7 +66,7 @@ const RegistrationSection = () => {
       setIsSubmitted(true);
       toast({
         title: "Registration Successful! 🎉",
-        description: "We'll contact you soon with your 50% discount details!",
+        description: "We'll contact you soon with your discount details!",
       });
     } catch (error) {
       console.error('Registration error:', error);
@@ -104,7 +104,7 @@ const RegistrationSection = () => {
                 className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-bold mb-4"
               >
                 <Gift className="w-4 h-4" />
-                Limited Time: 50% OFF!
+                Up to 20% OFF + FREE Registration!
               </motion.div>
 
               <h2 className="text-2xl md:text-4xl font-bold mt-2 mb-4">
@@ -117,8 +117,8 @@ const RegistrationSection = () => {
 
               <div className="space-y-3 md:space-y-4">
                 {[
-                  "🎉 50% OFF on first month",
-                  "📶 FREE lifetime WiFi access",
+                  "🎉 Up to 20% OFF on all shifts",
+                  "📝 FREE Registration",
                   "💺 Personal study desk allocation",
                   "🔌 Power backup guaranteed",
                   "❄️ Fully air-conditioned",
@@ -144,7 +144,7 @@ const RegistrationSection = () => {
                 viewport={{ once: true }}
                 className="mt-6 text-sm text-muted-foreground bg-muted/50 p-3 rounded-xl"
               >
-                ⏰ <strong>Hurry!</strong> Only first 50 registrations get the founding member discount.
+                ⏰ <strong>Hurry!</strong> Limited period offer - Register now to avail discounts.
               </motion.p>
             </motion.div>
 
@@ -166,7 +166,7 @@ const RegistrationSection = () => {
                   <h3 className="text-xl md:text-2xl font-bold mb-2">Thank You! 🎉</h3>
                   <p className="text-muted-foreground mb-4 md:mb-6 text-sm md:text-base">
                     Your registration has been received. Our team will contact you
-                    within 24 hours with your 50% discount details!
+                    within 24 hours with your discount details!
                   </p>
                   <div className="space-y-3">
                     <a
@@ -198,7 +198,7 @@ const RegistrationSection = () => {
                 >
                   <div className="text-center mb-4">
                     <h3 className="text-lg md:text-xl font-bold">Quick Registration</h3>
-                    <p className="text-xs md:text-sm text-muted-foreground">Get your 50% discount today!</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">FREE Registration + Up to 20% OFF!</p>
                   </div>
 
                   <div className="space-y-3 md:space-y-4">
@@ -266,7 +266,7 @@ const RegistrationSection = () => {
                     ) : (
                       <>
                         <Send className="w-5 h-5 mr-2" />
-                        Claim 50% Discount
+                        Register Now - FREE
                       </>
                     )}
                   </Button>
