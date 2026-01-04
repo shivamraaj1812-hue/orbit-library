@@ -26,7 +26,7 @@ const Footer = () => {
               students today.
             </p>
             <a
-              href="https://wa.me/919334437074"
+              href="https://wa.me/917004656429"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-green-500 text-white px-4 py-2.5 rounded-full text-sm font-medium hover:bg-green-600 transition-colors active:scale-95"
@@ -83,10 +83,10 @@ const Footer = () => {
               <li className="flex items-center gap-2 md:gap-3">
                 <Phone className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 <a
-                  href="tel:+919334437074"
+                  href="tel:+917004656429"
                   className="text-muted-foreground hover:text-primary transition-colors text-sm md:text-base"
                 >
-                  +91 93344 37074
+                  +91 70046 56429
                 </a>
               </li>
               <li className="flex items-center gap-2 md:gap-3">

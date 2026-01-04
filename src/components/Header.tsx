@@ -88,7 +88,7 @@ const Header = () => {
             </Button>
 
             <a
-              href="https://wa.me/919334437074"
+              href="https://wa.me/917004656429"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden md:block"
@@ -133,7 +133,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://wa.me/919334437074"
+              href="https://wa.me/917004656429"
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-3"
