@@ -105,7 +105,7 @@ const HeroSection = () => {
             >
               {[
                 { value: "50+", label: "Seats" },
-                { value: "24hrs", label: "Daily" },
+                { value: "23hrs", label: "Daily" },
                 { value: "100%", label: "AC & WiFi" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">

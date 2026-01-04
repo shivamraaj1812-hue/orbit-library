@@ -64,7 +64,7 @@ const AboutSection = () => {
                   <div className="text-muted-foreground text-xs md:text-base">Off All Shifts</div>
                 </div>
                 <div className="bg-accent rounded-2xl p-4 md:p-6 text-accent-foreground">
-                  <div className="text-2xl md:text-4xl font-bold">24hrs</div>
+                  <div className="text-2xl md:text-4xl font-bold">23hrs</div>
                   <div className="text-accent-foreground/80 text-xs md:text-base">Open Daily</div>
                 </div>
               </motion.div>
