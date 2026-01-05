@@ -92,10 +92,10 @@ const Footer = () => {
               <li className="flex items-center gap-2 md:gap-3">
                 <Mail className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:info@orbitlibrary.com"
+                  href="mailto:orbitlibrarymgr@gmail.com"
                   className="text-muted-foreground hover:text-primary transition-colors text-sm md:text-base break-all"
                 >
-                  info@orbitlibrary.com
+                  orbitlibrarymgr@gmail.com
                 </a>
               </li>
             </ul>
