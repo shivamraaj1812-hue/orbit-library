@@ -253,18 +253,6 @@ const RegistrationSection = () => {
                     </div>
 
                     <div className="relative">
-                      <MapPin className="absolute left-3 top-3 w-5 h-5 text-muted-foreground" />
-                      <Textarea
-                        name="address"
-                        placeholder="Full Address"
-                        value={formData.address}
-                        onChange={handleChange}
-                        className="pl-10 min-h-[80px] md:min-h-[100px] rounded-xl resize-none text-base"
-                        disabled={isLoading}
-                      />
-                    </div>
-
-                    <div className="relative">
                       <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
                       <Input
                         name="parentName"
@@ -285,6 +273,18 @@ const RegistrationSection = () => {
                         value={formData.parentPhone}
                         onChange={handleChange}
                         className="pl-10 h-12 md:h-14 rounded-xl text-base"
+                        disabled={isLoading}
+                      />
+                    </div>
+
+                    <div className="relative">
+                      <MapPin className="absolute left-3 top-3 w-5 h-5 text-muted-foreground" />
+                      <Textarea
+                        name="address"
+                        placeholder="Full Address"
+                        value={formData.address}
+                        onChange={handleChange}
+                        className="pl-10 min-h-[80px] md:min-h-[100px] rounded-xl resize-none text-base"
                         disabled={isLoading}
                       />
                     </div>
