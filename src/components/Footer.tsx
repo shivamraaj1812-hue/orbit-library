@@ -76,8 +76,8 @@ const Footer = () => {
               <li className="flex items-start gap-2 md:gap-3">
                 <MapPin className="w-4 h-4 md:w-5 md:h-5 text-primary mt-0.5 flex-shrink-0" />
                 <span className="text-muted-foreground text-sm md:text-base">
-                  123 Education Street,<br />
-                  Knowledge Park, City
+                  Kaura Maidan,<br />
+                  Gola road,Munger
                 </span>
               </li>
               <li className="flex items-center gap-2 md:gap-3">
@@ -87,6 +87,7 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-primary transition-colors text-sm md:text-base"
                 >
                   +91 70046 56429
+                  +91 79872 56850
                 </a>
               </li>
               <li className="flex items-center gap-2 md:gap-3">

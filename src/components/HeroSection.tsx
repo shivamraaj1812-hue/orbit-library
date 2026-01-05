@@ -22,7 +22,7 @@ const HeroSection = () => {
         >
           <div className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-bold animate-pulse">
             <Gift className="w-4 h-4" />
-            🎉 GRAND OPENING - Up to 20% OFF + FREE Registration!
+            🎉 GRAND OPENING - Up to 20% OFF + FREE Registration for limited time only!
           </div>
         </motion.div>
 
@@ -68,7 +68,7 @@ const HeroSection = () => {
               </div>
               <p className="text-sm text-white/90">
                 Get <span className="font-bold">up to 20% OFF</span> on all shifts + 
-                <span className="font-bold"> FREE Registration</span>!
+                <span className="font-bold"> FREE Registration for limited time only</span>!
               </p>
             </motion.div>
 
