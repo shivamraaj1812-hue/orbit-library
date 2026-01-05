@@ -116,7 +116,7 @@ const RegistrationSection = () => {
                 className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-bold mb-4"
               >
                 <Gift className="w-4 h-4" />
-                Up to 20% OFF + FREE Registration!
+                Up to 20% OFF + FREE Registration for limited time only!
               </motion.div>
 
               <h2 className="text-2xl md:text-4xl font-bold mt-2 mb-4">
@@ -130,7 +130,7 @@ const RegistrationSection = () => {
               <div className="space-y-3 md:space-y-4">
                 {[
                   "🎉 Up to 20% OFF on all shifts",
-                  "📝 FREE Registration",
+                  "📝 FREE Registration for limited time only",
                   "💺 Personal study desk allocation",
                   "🔌 Power backup guaranteed",
                   "❄️ Fully air-conditioned",
@@ -210,7 +210,7 @@ const RegistrationSection = () => {
                 >
                   <div className="text-center mb-4">
                     <h3 className="text-lg md:text-xl font-bold">Quick Registration</h3>
-                    <p className="text-xs md:text-sm text-muted-foreground">FREE Registration + Up to 20% OFF!</p>
+                    <p className="text-xs md:text-sm text-muted-foreground">FREE Registration for limited time only + Up to 20% OFF!</p>
                   </div>
 
                   <div className="space-y-3 md:space-y-4">
