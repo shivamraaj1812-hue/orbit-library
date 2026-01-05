@@ -1,46 +1,76 @@
 import { motion } from "framer-motion";
-import { Wifi, Coffee, BookOpen, Users, Clock, Shield, Zap, Headphones } from "lucide-react";
+import { Wifi, Coffee, BookOpen, Users, Clock, Shield, Zap, Headphones, Armchair, Lamp, Newspaper, Droplets, Lock, Car, UtensilsCrossed, Camera, Bath, MessageSquare, Snowflake, Heart } from "lucide-react";
 
 const features = [
   {
+    icon: Armchair,
+    title: "Well Furnished Desks",
+    description: "Huge desks with high-back comfortable chairs for extended study sessions.",
+  },
+  {
+    icon: Lamp,
+    title: "Personal Light & Charging",
+    description: "Individual lighting and charging points available at every table.",
+  },
+  {
+    icon: Newspaper,
+    title: "Newspapers & Magazines",
+    description: "Daily newspapers and monthly magazines to keep you updated.",
+  },
+  {
     icon: Wifi,
-    title: "High-Speed WiFi",
-    description: "Blazing fast internet connectivity for seamless research and online learning.",
+    title: "High-Speed WiFi 24x7",
+    description: "Blazing fast internet connectivity available round the clock.",
   },
   {
-    icon: BookOpen,
-    title: "Vast Collection",
-    description: "Access to thousands of books, journals, and study materials across all subjects.",
+    icon: Droplets,
+    title: "RO Drinking Water",
+    description: "Pure and safe RO drinking water available for all students.",
   },
   {
-    icon: Headphones,
-    title: "Silent Zones",
-    description: "Dedicated quiet areas for deep focus and uninterrupted study sessions.",
-  },
-  {
-    icon: Coffee,
-    title: "Refreshment Zone",
-    description: "Cozy café area with coffee and snacks to keep you energized.",
+    icon: Lock,
+    title: "Locker Facilities",
+    description: "Secure lockers to safely store your belongings while you study.",
   },
   {
     icon: Users,
-    title: "Group Study Rooms",
-    description: "Private rooms for collaborative learning and group discussions.",
+    title: "Separate Rows",
+    description: "Dedicated separate seating rows for boys and girls.",
   },
   {
-    icon: Clock,
-    title: "Extended Hours",
-    description: "Open early morning till late night to accommodate your schedule.",
+    icon: Snowflake,
+    title: "Fully Air Conditioned",
+    description: "Comfortable AC environment throughout the library.",
   },
   {
-    icon: Shield,
-    title: "Safe & Secure",
-    description: "24/7 security with CCTV surveillance and secure storage lockers.",
+    icon: Car,
+    title: "Proper Parking Space",
+    description: "Ample parking space available for your convenience.",
   },
   {
-    icon: Zap,
-    title: "Power Backup",
-    description: "Uninterrupted power supply so your study never stops.",
+    icon: UtensilsCrossed,
+    title: "Separate Lunch Room",
+    description: "Dedicated lunch room area for meals and refreshments.",
+  },
+  {
+    icon: Camera,
+    title: "24hrs CCTV Surveillance",
+    description: "Round-the-clock security with CCTV cameras everywhere.",
+  },
+  {
+    icon: Bath,
+    title: "Clean & Hygienic Washroom",
+    description: "Well-maintained and hygienic washroom facilities.",
+  },
+  {
+    icon: MessageSquare,
+    title: "Chit-Chat Space",
+    description: "Separate space for discussions and group conversations.",
+  },
+  {
+    icon: Heart,
+    title: "Peaceful Environment",
+    description: "Calm and serene atmosphere perfect for focused studying.",
   },
 ];
 
@@ -66,14 +96,14 @@ const FeaturesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.05 }}
               whileHover={{ y: -5 }}
               className="bg-card p-4 md:p-6 rounded-2xl border shadow-sm hover:shadow-elegant transition-all duration-300 group"
             >
