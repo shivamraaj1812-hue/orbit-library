@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { User, Phone, Mail, MapPin, Send, CheckCircle, Gift, Loader2 } from "lucide-react";
+import { User, Phone, Mail, MapPin, Send, CheckCircle, Gift, Loader2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,13 +16,15 @@ const RegistrationSection = () => {
     phone: "",
     email: "",
     address: "",
+    parentName: "",
+    parentPhone: "",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.name || !formData.phone || !formData.email || !formData.address) {
+    if (!formData.name || !formData.phone || !formData.email || !formData.address || !formData.parentName || !formData.parentPhone) {
       toast({
         title: "Please fill all fields",
         description: "All fields are required for registration.",
@@ -48,6 +50,16 @@ const RegistrationSection = () => {
       toast({
         title: "Invalid phone number",
         description: "Please enter a valid phone number.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Parent phone validation
+    if (!phoneRegex.test(formData.parentPhone)) {
+      toast({
+        title: "Invalid parent phone number",
+        description: "Please enter a valid parent phone number.",
         variant: "destructive",
       });
       return;
@@ -182,7 +194,7 @@ const RegistrationSection = () => {
                     <Button
                       onClick={() => {
                         setIsSubmitted(false);
-                        setFormData({ name: "", phone: "", email: "", address: "" });
+                        setFormData({ name: "", phone: "", email: "", address: "", parentName: "", parentPhone: "" });
                       }}
                       variant="outline"
                       className="w-full rounded-full h-12"
@@ -248,6 +260,31 @@ const RegistrationSection = () => {
                         value={formData.address}
                         onChange={handleChange}
                         className="pl-10 min-h-[80px] md:min-h-[100px] rounded-xl resize-none text-base"
+                        disabled={isLoading}
+                      />
+                    </div>
+
+                    <div className="relative">
+                      <Users className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                      <Input
+                        name="parentName"
+                        placeholder="Parent's Name"
+                        value={formData.parentName}
+                        onChange={handleChange}
+                        className="pl-10 h-12 md:h-14 rounded-xl text-base"
+                        disabled={isLoading}
+                      />
+                    </div>
+
+                    <div className="relative">
+                      <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                      <Input
+                        name="parentPhone"
+                        placeholder="Parent's Phone Number"
+                        type="tel"
+                        value={formData.parentPhone}
+                        onChange={handleChange}
+                        className="pl-10 h-12 md:h-14 rounded-xl text-base"
                         disabled={isLoading}
                       />
                     </div>
