@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+📚 Library Landing Page
 
-## Project info
+A modern, responsive landing page designed for a digital library platform.
+This project focuses on clean UI, performance, and accessibility while delivering a smooth user experience across all devices.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🔍 Overview
 
-## How can I edit this code?
+The Library Landing Page serves as an entry point for users to explore a digital library’s offerings—books, resources, and learning tools.
+It is built using modern frontend technologies to ensure fast load times, scalability, and maintainability.
 
-There are several ways of editing your application.
+✨ Features
 
-**Use Lovable**
+📱 Fully responsive design (mobile, tablet, desktop)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+⚡ Fast performance with modern build tooling
 
-Changes made via Lovable will be committed automatically to this repo.
+🎨 Clean and minimal UI
 
-**Use your preferred IDE**
+♿ Accessible and user-friendly layout
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🧩 Reusable UI components
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+🌙 Scalable styling architecture
 
-Follow these steps:
+🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+React – Component-based UI development
+
+TypeScript – Type safety and better developer experience
+
+Vite – Fast development and optimized builds
+
+Tailwind CSS – Utility-first styling
+
+shadcn/ui – Accessible, prebuilt UI components
+
+📁 Project Structure
+src/
+├── components/     # Reusable UI components
+├── pages/          # Page-level components
+├── assets/         # Images and static assets
+├── styles/         # Global styles
+├── App.tsx         # Root component
+└── main.tsx        # Application entry point
+
+🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+Prerequisites
+
+Node.js (v16 or above)
+
+npm
+
+Installation
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The application will be available at:
 
-**Use GitHub Codespaces**
+http://localhost:5173
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🧪 Build for Production
+npm run build
 
-## What technologies are used for this project?
 
-This project is built with:
+This will generate an optimized production build.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🌐 Deployment
 
-## How can I deploy this project?
+The project can be deployed on any modern hosting platform that supports static builds.
+Simply upload the generated build files or connect the repository for continuous deployment.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+🎯 Use Cases
 
-## Can I connect a custom domain to my Lovable project?
+Digital library platforms
 
-Yes, you can!
+Educational institutions
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Book subscription services
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Learning resource portals
+
+Portfolio or demo projects
+
+📸 Screenshots
+
+Add screenshots or GIFs here to showcase the UI.
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository
+
+Create a new branch
+
+Make your changes
+
+Submit a pull request
+
+📄 License
+
+This project is licensed under the MIT License.
+
+👤 Author
+
+Shivam Raj
+Frontend Developer | React | TypeScript | Tailwind CSS
