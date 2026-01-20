@@ -12,9 +12,9 @@ serve(async (req) => {
   }
 
   try {
-    const { name, phone, email, address, parentName, parentPhone } = await req.json();
+    const { name, phone, email, aadharNumber, address, parentName, parentPhone } = await req.json();
     
-    console.log('Received registration:', { name, phone, email, address, parentName, parentPhone });
+    console.log('Received registration:', { name, phone, email, aadharNumber, address, parentName, parentPhone });
 
     const webhookUrl = Deno.env.get('GOOGLE_SHEETS_WEBHOOK_URL');
     
@@ -33,6 +33,7 @@ serve(async (req) => {
         name,
         phone,
         email,
+        aadharNumber,
         address,
         parentName,
         parentPhone,

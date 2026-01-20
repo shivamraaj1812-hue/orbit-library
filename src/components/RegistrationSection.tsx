@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { User, Phone, Mail, MapPin, Send, CheckCircle, Gift, Loader2, Users } from "lucide-react";
+import { User, Phone, Mail, MapPin, Send, CheckCircle, Gift, Loader2, Users, CreditCard } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -15,6 +15,7 @@ const RegistrationSection = () => {
     name: "",
     phone: "",
     email: "",
+    aadharNumber: "",
     address: "",
     parentName: "",
     parentPhone: "",
@@ -24,10 +25,21 @@ const RegistrationSection = () => {
     e.preventDefault();
     
     // Basic validation
-    if (!formData.name || !formData.phone || !formData.email || !formData.address || !formData.parentName || !formData.parentPhone) {
+    if (!formData.name || !formData.phone || !formData.email || !formData.aadharNumber || !formData.address || !formData.parentName || !formData.parentPhone) {
       toast({
         title: "Please fill all fields",
         description: "All fields are required for registration.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Aadhar validation (12 digits)
+    const aadharRegex = /^[0-9]{12}$/;
+    if (!aadharRegex.test(formData.aadharNumber.replace(/\s/g, ''))) {
+      toast({
+        title: "Invalid Aadhar Number",
+        description: "Please enter a valid 12-digit Aadhar number.",
         variant: "destructive",
       });
       return;
@@ -194,7 +206,7 @@ const RegistrationSection = () => {
                     <Button
                       onClick={() => {
                         setIsSubmitted(false);
-                        setFormData({ name: "", phone: "", email: "", address: "", parentName: "", parentPhone: "" });
+                        setFormData({ name: "", phone: "", email: "", aadharNumber: "", address: "", parentName: "", parentPhone: "" });
                       }}
                       variant="outline"
                       className="w-full rounded-full h-12"
@@ -249,6 +261,19 @@ const RegistrationSection = () => {
                         onChange={handleChange}
                         className="pl-10 h-12 md:h-14 rounded-xl text-base"
                         disabled={isLoading}
+                      />
+                    </div>
+
+                    <div className="relative">
+                      <CreditCard className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                      <Input
+                        name="aadharNumber"
+                        placeholder="Student's Aadhar Card Number"
+                        value={formData.aadharNumber}
+                        onChange={handleChange}
+                        className="pl-10 h-12 md:h-14 rounded-xl text-base"
+                        disabled={isLoading}
+                        maxLength={12}
                       />
                     </div>
 
