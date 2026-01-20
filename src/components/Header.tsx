@@ -25,6 +25,7 @@ const Header = () => {
 
   const navItems = [
     { name: "Features", href: "#features" },
+    { name: "Rules", href: "#rules" },
     { name: "Timing", href: "#timing" },
     { name: "About", href: "#about" },
     { name: "Gallery", href: "#gallery" },
@@ -52,7 +53,7 @@ const Header = () => {
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-full overflow-hidden bg-white shadow-sm">
               <img src={orbitLogo} alt="Orbit Library" className="w-full h-full object-contain" />
             </div>
-            <span className="text-lg md:text-2xl font-bold text-gradient">
+            <span className="text-xl md:text-3xl font-extrabold text-gradient">
               Orbit Library
             </span>
           </motion.a>
