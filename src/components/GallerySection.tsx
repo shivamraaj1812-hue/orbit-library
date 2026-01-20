@@ -5,6 +5,7 @@ import galleryCctv from "@/assets/gallery-cctv.jpeg";
 import galleryRestroom from "@/assets/gallery-restroom.jpeg";
 import galleryLocker from "@/assets/gallery-locker.jpeg";
 import galleryEntrance from "@/assets/gallery-entrance.jpeg";
+import galleryRooftop from "@/assets/gallery-rooftop.jpeg";
 
 const galleryImages = [
   {
@@ -36,6 +37,11 @@ const galleryImages = [
     title: "Library Entrance",
     description: "Welcoming entrance with peaceful environment",
     image: galleryEntrance,
+  },
+  {
+    title: "Rooftop Area",
+    description: "Open space for calling, chit-chats and breaks",
+    image: galleryRooftop,
   },
 ];
 
