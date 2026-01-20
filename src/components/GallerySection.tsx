@@ -1,36 +1,41 @@
 import { motion } from "framer-motion";
-import { Camera } from "lucide-react";
+import galleryStudyHall from "@/assets/gallery-study-hall.jpeg";
+import galleryStudyArea from "@/assets/gallery-study-area.jpeg";
+import galleryCctv from "@/assets/gallery-cctv.jpeg";
+import galleryRestroom from "@/assets/gallery-restroom.jpeg";
+import galleryLocker from "@/assets/gallery-locker.jpeg";
+import galleryEntrance from "@/assets/gallery-entrance.jpeg";
 
 const galleryImages = [
   {
     title: "Study Hall",
     description: "Spacious study area with individual desks",
-    gradient: "from-blue-500 to-purple-600",
+    image: galleryStudyHall,
   },
   {
-    title: "Reading Lounge",
-    description: "Comfortable seating for relaxed reading",
-    gradient: "from-emerald-500 to-teal-600",
+    title: "Panoramic View",
+    description: "Full view of our modern study space",
+    image: galleryStudyArea,
   },
   {
-    title: "Computer Lab",
-    description: "Modern computers with high-speed internet",
-    gradient: "from-orange-500 to-red-600",
+    title: "CCTV Surveillance",
+    description: "24/7 security monitoring for your safety",
+    image: galleryCctv,
   },
   {
-    title: "Group Study Room",
-    description: "Private rooms for collaborative learning",
-    gradient: "from-pink-500 to-rose-600",
+    title: "Rest Room",
+    description: "Comfortable resting area for breaks",
+    image: galleryRestroom,
   },
   {
-    title: "Book Collection",
-    description: "Vast library of academic resources",
-    gradient: "from-indigo-500 to-blue-600",
+    title: "Personal Lockers",
+    description: "Secure storage for your belongings",
+    image: galleryLocker,
   },
   {
-    title: "Café Area",
-    description: "Refreshments to fuel your study sessions",
-    gradient: "from-amber-500 to-orange-600",
+    title: "Library Entrance",
+    description: "Welcoming entrance with peaceful environment",
+    image: galleryEntrance,
   },
 ];
 
@@ -67,13 +72,12 @@ const GallerySection = () => {
               whileHover={{ y: -5 }}
               className="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer"
             >
-              {/* Gradient Background as Placeholder */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${image.gradient}`}>
-                <div className="absolute inset-0 bg-black/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Camera className="w-16 h-16 text-white/50" />
-                </div>
-              </div>
+              {/* Actual Image */}
+              <img
+                src={image.image}
+                alt={image.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
@@ -97,15 +101,6 @@ const GallerySection = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center text-muted-foreground mt-8"
-        >
-          📸 Upload your library photos to showcase the actual space
-        </motion.p>
       </div>
     </section>
   );

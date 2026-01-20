@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { VolumeX, Smartphone, PhoneOff } from "lucide-react";
+import { VolumeX, Smartphone, PhoneOff, MessageSquareOff, IdCard, Armchair, ShieldCheck, Sparkles, PenOff, Clock } from "lucide-react";
 
 const rules = [
   {
@@ -15,7 +15,42 @@ const rules = [
   {
     icon: PhoneOff,
     title: "No Phone Calls",
-    description: "Phone calls are strictly not allowed inside the study area. We have a separate area for calls.",
+    description: "Phone calls are strictly not allowed inside the study area.",
+  },
+  {
+    icon: MessageSquareOff,
+    title: "No Discussions",
+    description: "Talking or group discussions are not permitted in the study area.",
+  },
+  {
+    icon: IdCard,
+    title: "Valid ID Required",
+    description: "Students must carry a valid library ID/pass daily.",
+  },
+  {
+    icon: Armchair,
+    title: "Fixed Seating",
+    description: "Seats are allotted and cannot be changed without permission.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Personal Belongings",
+    description: "Personal belongings should be kept responsibly at all times.",
+  },
+  {
+    icon: Sparkles,
+    title: "Cleanliness & Hygiene",
+    description: "Maintain cleanliness and hygiene in the library premises.",
+  },
+  {
+    icon: PenOff,
+    title: "No Vandalism",
+    description: "Writing on desks, walls, or books is strictly prohibited.",
+  },
+  {
+    icon: Clock,
+    title: "Registered Time Slots",
+    description: "Entry is allowed only during registered time slots.",
   },
 ];
 
@@ -40,21 +75,21 @@ const RulesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6">
           {rules.map((rule, index) => (
             <motion.div
               key={rule.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-card p-6 md:p-8 rounded-2xl border border-destructive/20 shadow-sm text-center"
+              transition={{ delay: index * 0.05 }}
+              className="bg-card p-4 md:p-6 rounded-2xl border border-destructive/20 shadow-sm text-center"
             >
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-4">
-                <rule.icon className="w-7 h-7 md:w-8 md:h-8 text-destructive" />
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-3">
+                <rule.icon className="w-6 h-6 md:w-7 md:h-7 text-destructive" />
               </div>
-              <h3 className="text-lg md:text-xl font-semibold mb-2">{rule.title}</h3>
-              <p className="text-muted-foreground text-sm md:text-base">{rule.description}</p>
+              <h3 className="text-sm md:text-base font-semibold mb-1">{rule.title}</h3>
+              <p className="text-muted-foreground text-xs md:text-sm">{rule.description}</p>
             </motion.div>
           ))}
         </div>
